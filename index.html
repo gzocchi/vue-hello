@@ -11,12 +11,13 @@
 </head>
 
 <body>
-    <main id="root">
-        <h1>{{ h1Message }}</h1>
+    <main id="root" :class="color">
+        <h1 :class="color">{{ h1Message }}</h1>
         <section>
             <img @click="imgChange" :src="mainImg" alt="Hello Vue">
         </section>
-        <button @click="imgChange">Cambia Immagine</button>
+        <button @click="imgChange" :class="color">Cambia Immagine</button>
+        <button @click="colorChange" :class="color">Cambia Colore</button>
     </main>
 
     <script src="js/script.js"></script>

@@ -9,24 +9,51 @@ main {
   width: 100%;
   padding: 20px;
   text-align: center;
+}
+main.red {
   background-color: rgb(236, 142, 142);
+}
+main.green {
+  background-color: rgb(153, 236, 142);
 }
 
 h1 {
-  color: rgb(107, 9, 9);
   text-decoration: underline;
+  font-size: 40px;
+}
+h1:hover {
+  transform: scale(1.1);
+}
+h1.red {
+  color: rgb(107, 9, 9);
+}
+h1.green {
+  color: rgb(9, 107, 50);
 }
 
 main img {
   max-width: 60%;
-  max-height: 40vh;
+  max-height: 50vh;
   margin: 40px auto;
   border-radius: 10px;
 }
+
 button {
   padding: 10px 15px;
   border-radius: 10px;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(0.9);
+  opacity: 0.9;
+}
+button.red {
   background-color: rgb(197, 163, 163);
   border-color: rgb(107, 9, 9);
   color: rgb(107, 9, 9);
+}
+button.green {
+  background-color: rgb(170, 197, 163);
+  border-color: rgb(9, 107, 50);
+  color: rgb(9, 107, 50);
 }

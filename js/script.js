@@ -11,12 +11,14 @@ const app = new Vue({
       "https://images.pexels.com/photos/614117/pexels-photo-614117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
       "https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     ],
+    color: "red",
   },
   methods: {
     imgChange: function () {
       this.mainImg = this.imgArray[getRndInteger(0, this.imgArray.length - 1)];
-      console.log("click");
-      console.log(this.imgArray[2]);
+    },
+    colorChange: function () {
+      this.color == "red" ? (this.color = "green") : (this.color = "red");
     },
   },
 });
