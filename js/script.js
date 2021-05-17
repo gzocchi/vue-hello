@@ -15,15 +15,14 @@ const app = new Vue({
   },
   methods: {
     imgChange: function () {
-      this.mainImg = this.imgArray[getRndInteger(0, this.imgArray.length - 1)];
+      this.mainImg =
+        this.imgArray[this.randomNumber(0, this.imgArray.length - 1)];
     },
     colorChange: function () {
       this.color == "red" ? (this.color = "green") : (this.color = "red");
     },
+    randomNumber: function (min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    },
   },
 });
-
-// FUNCTIONS
-function getRndInteger(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
