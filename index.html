@@ -12,7 +12,11 @@
 
 <body>
     <main id="root">
-
+        <h1>{{ h1Message }}</h1>
+        <section>
+            <img @click="imgChange" :src="mainImg" alt="Hello Vue">
+        </section>
+        <button @click="imgChange">Cambia Immagine</button>
     </main>
 
     <script src="js/script.js"></script>
